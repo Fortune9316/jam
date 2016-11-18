@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tele.unity
+- path: Assets/Scenes/Reunion.unity
   isLoaded: 1
   isActive: 1
