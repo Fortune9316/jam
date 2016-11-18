@@ -45,7 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AudioController.cs" />
      <Compile Include="Assets\Scripts\BgScaler.cs" />
+     <Compile Include="Assets\Scripts\ColorController.cs" />
+     <Compile Include="Assets\Scripts\MoveChar.cs" />
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
      <Compile Include="Assets\Scripts\TextHandler.cs" />

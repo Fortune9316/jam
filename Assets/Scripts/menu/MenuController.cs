@@ -9,6 +9,8 @@ public class MenuController : MonoBehaviour {
     float t,dt;
     float target;
     bool loop;
+    bool loop2;
+    bool loop3;
 	// Use this for initialization
 	void Start () {
         t = 0;
@@ -16,6 +18,8 @@ public class MenuController : MonoBehaviour {
         target = 1.0f;
         actualScale = animateObject.transform.localScale;
         loop = true;
+        loop2 = false;
+        loop3 = false;
 	}
 	
 	// Update is called once per frame
@@ -35,19 +39,36 @@ public class MenuController : MonoBehaviour {
             {
                 dt = 1;
             }
-        }else
+        }else if(!loop2)
         {
             animateObject.transform.localScale = Vector3.Lerp(actualScale, new Vector3(target, actualScale.y, actualScale.z), t);
 
             t += Time.deltaTime * 0.5f * dt;
             if(t>=1f)
             {
+                SceneManager.LoadScene("Dormitorio");
+                //loop2 = true;
+                
+            }
+            if (t <= 0f)
+            {
                 SceneManager.LoadScene("Desayuno");
             }
         }
-        
+        //if(loop2 && !loop3)
+        //{
+        //    t = 0f;
+        //    target = 0.0f;
+        //    dt = 1;
+        //    actualScale = animateObject.transform.localScale;
+        //    loop3 = true;
+        //}
+        //if(loop3)
+        //{
+        //    animateObject.transform.localScale = Vector3.Lerp(actualScale, new Vector3(target, actualScale.y, actualScale.z), t);
+        //}
 
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             loop = false;
             t = 0f;
@@ -57,5 +78,5 @@ public class MenuController : MonoBehaviour {
             //SceneManager.LoadScene("Desayuno");
         }
 
-	}
+    }
 }
