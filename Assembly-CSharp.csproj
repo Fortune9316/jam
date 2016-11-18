@@ -48,12 +48,8 @@
      <Compile Include="Assets\Scripts\BgScaler.cs" />
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\menu\MenuController.cs" />
-=======
      <Compile Include="Assets\Scripts\TextHandler.cs" />
-     <None Include="Assets\New Text Document.txt" />
->>>>>>> 90b7ad5cd820154bdc404c71740e666c5ab8b41e
+     <Compile Include="Assets\Scripts\menu\MenuController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
