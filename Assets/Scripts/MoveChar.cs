@@ -9,7 +9,7 @@ public class MoveChar : MonoBehaviour {
     bool flag;
     float t;
     float dt;
-    public float speed = 10f;
+    public float speed = 5f;
 	// Use this for initialization
 	void Start () {
         pos = transform.position;
@@ -40,11 +40,8 @@ public class MoveChar : MonoBehaviour {
     }
     void move()
     {
-        transform.position = Vector3.Lerp(pos, newPos, t);
-        transform.position = new Vector3(transform.position.x, pos.y, pos.z);
-        dt = Time.deltaTime;
-        float distancia = Vector3.Distance(pos, newPos);
-        t += dt/distancia * speed;
+        float step = speed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(newPos.x,transform.position.y,transform.position.z), step);
 
         if (t >= 1)
         {
