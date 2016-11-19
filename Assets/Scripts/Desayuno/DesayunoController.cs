@@ -32,9 +32,9 @@ public class DesayunoController : MonoBehaviour {
                 controladores[i].ToColor("Viaje_A");
             }
         }
-        if(boul != 0 && leche != 0 && cereal != 0)
-        {
-            SceneManager.LoadScene("Viaje_B");
+		if (boul != 0 && leche != 0 && cereal != 0) {
+			if (MsgController.instancia.GetEndMsg()) {
+				SceneManager.LoadScene ("Viaje_B");}
+			}
         }
-	}
 }
