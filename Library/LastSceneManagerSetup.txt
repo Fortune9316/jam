@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Desayuno.unity
-=======
-- path: Assets/Scenes/Menu.unity
->>>>>>> 0bb5bbe44b4b2fd980f8489f28494ad8f5971ae9
+- path: Assets/Scenes/Viaje_A.unity
   isLoaded: 1
   isActive: 1
