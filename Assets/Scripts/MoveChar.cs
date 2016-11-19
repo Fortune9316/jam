@@ -9,11 +9,11 @@ public class MoveChar : MonoBehaviour {
     bool flag;
     float t;
     float dt;
-    public float speed = 5f;
+    public float speed;
 	// Use this for initialization
 	void Start () {
         pos = transform.position;
-        
+        speed = 5f;
 	}
 
     // Update is called once per frame
@@ -26,10 +26,10 @@ public class MoveChar : MonoBehaviour {
             newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if(newPos.x<transform.position.x)
             {
-                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+                transform.localScale = new Vector3(-1.2f, transform.localScale.y, transform.localScale.z);
             }else
             {
-                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                transform.localScale = new Vector3(1.2f, transform.localScale.y, transform.localScale.z);
             }
             flag = true;
         }
@@ -53,5 +53,9 @@ public class MoveChar : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll)
     {
         SceneManager.LoadScene("Desayuno");
+        if(coll.gameObject.tag == "addTime")
+        {
+            PlayerPrefs.SetString("clock", "08:15");
+        }
     }
 }

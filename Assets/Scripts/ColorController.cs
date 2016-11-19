@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ColorController : MonoBehaviour {
 
@@ -28,4 +29,24 @@ public class ColorController : MonoBehaviour {
             spB.color = color;
         }
     }
+
+    public void ToColor(string nextScene)
+    {
+        Color color = spB.color;
+        color -= new Color(0f, 0f, 0f, 0.01f);
+        spB.color = color;
+        if(color.a <=0f)
+        {
+            SceneManager.LoadScene(nextScene);
+        }
+    }
+
+    public void ToGray()
+    {
+        Color color = spB.color;
+        color += new Color(0f, 0f, 0f, 0.01f);
+        spB.color = color;
+    }
+
+
 }

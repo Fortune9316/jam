@@ -47,7 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AudioController.cs" />
      <Compile Include="Assets\Scripts\BgScaler.cs" />
+     <Compile Include="Assets\Scripts\Clock.cs" />
      <Compile Include="Assets\Scripts\ColorController.cs" />
+     <Compile Include="Assets\Scripts\Desayuno\DesayunoController.cs" />
      <Compile Include="Assets\Scripts\MoveChar.cs" />
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
