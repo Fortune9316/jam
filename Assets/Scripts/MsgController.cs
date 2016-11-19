@@ -120,6 +120,13 @@ public class MsgController: MonoBehaviour {
 			
 	}
 
+	public bool GetEndMsg(){
+		if (Parrafo < Textos.Length) {
+			return false;
+		} else {
+			return true;}
+	}
+
 	void DisplayText(string CurrText){
 		if (Continuar) {
 			CurrentTime += Time.deltaTime;
