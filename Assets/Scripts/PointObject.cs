@@ -6,6 +6,9 @@ public class PointObject : MonoBehaviour {
     public GameObject targetB;
     public GameObject targetL;
     public GameObject targetC;
+    public GameObject boulB;
+    public GameObject lecheB;
+    public GameObject cerealB;
     private Vector3 pos;
     bool flag;
     private float t;
@@ -26,17 +29,17 @@ public class PointObject : MonoBehaviour {
             {
                 if(hit.collider.gameObject.tag == "boul")
                 {
-                    Blink(targetB.transform.position, hit.collider.gameObject);
+                    Blink(targetB.transform.position, hit.collider.gameObject,boulB);
                     PlayerPrefs.SetInt("DB", 11);
                 }
                 if (hit.collider.gameObject.tag == "leche")
                 {
-                    Blink(targetL.transform.position, hit.collider.gameObject);
+                    Blink(targetL.transform.position, hit.collider.gameObject,lecheB);
                     PlayerPrefs.SetInt("DL", 12);
                 }
                 if (hit.collider.gameObject.tag == "cereal")
                 {
-                    Blink(targetC.transform.position, hit.collider.gameObject);
+                    Blink(targetC.transform.position, hit.collider.gameObject,cerealB);
                     PlayerPrefs.SetInt("DC", 13);
                 }
             }
@@ -45,9 +48,10 @@ public class PointObject : MonoBehaviour {
 
         
 	}
-    void Blink(Vector3 target, GameObject obj)
+    void Blink(Vector3 target, GameObject obj , GameObject objB)
     {
-        obj.transform.position = target;        
+        obj.transform.position = target;
+        objB.transform.position = target;
     }
     
     
