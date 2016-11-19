@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Desayuno\DesayunoController.cs" />
      <Compile Include="Assets\Scripts\MoveChar.cs" />
      <Compile Include="Assets\Scripts\MsgController.cs" />
+     <Compile Include="Assets\Scripts\Oficina\OficinaController.cs" />
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
      <Compile Include="Assets\Scripts\TextHandler.cs" />

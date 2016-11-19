@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Viaje_B.unity
+- path: Assets/Scenes/Tele.unity
   isLoaded: 1
   isActive: 1
