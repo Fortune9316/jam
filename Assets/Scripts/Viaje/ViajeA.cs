@@ -52,6 +52,7 @@ public class ViajeA : MonoBehaviour
             {
                 float step1 = 0.5f * Time.deltaTime;
                 abuela.transform.position = Vector3.MoveTowards(abuela.transform.position, secondTargetAbuela.transform.position, step1);
+            abuelaB.transform.position = Vector3.MoveTowards(abuelaB.transform.position, secondTargetAbuela.transform.position, step1);
             }
         if(hit.collider.gameObject.tag == "minusTime" && !flag2)
         {
