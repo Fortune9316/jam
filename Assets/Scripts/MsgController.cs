@@ -29,14 +29,13 @@ public class MsgController: MonoBehaviour {
 	void Update () {
 	
 		//***Ejemplo de llamada a función***//
-/*		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0))
 
 		{
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
 			HuboClick (hit.collider);
 		}
-*/
 		DisplayText (TextoActual);
 
 	}
@@ -125,6 +124,11 @@ public class MsgController: MonoBehaviour {
 			return false;
 		} else {
 			return true;}
+	}
+
+	public void ActivatMsg(){
+		PreReq = true;
+		Req2 = true;
 	}
 
 	void DisplayText(string CurrText){

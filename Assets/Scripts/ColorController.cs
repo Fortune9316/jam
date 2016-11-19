@@ -16,7 +16,7 @@ public class ColorController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if(Input.GetKey(KeyCode.Space))
+	    /*if(Input.GetKey(KeyCode.Space))
         {
             Color color = spB.color;
             color -= new Color(0f, 0f, 0f, 0.01f);
@@ -27,7 +27,7 @@ public class ColorController : MonoBehaviour {
             Color color = spB.color;
             color += new Color(0f, 0f, 0f, 0.01f);
             spB.color = color;
-        }
+        }*/
     }
 
     public void ToColor(string nextScene)
