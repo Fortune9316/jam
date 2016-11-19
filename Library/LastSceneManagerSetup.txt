@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Tele.unity
+=======
+- path: Assets/Scenes/Viaje_B.unity
+>>>>>>> 8d4ab28f8fce0c38fb2a89c45d311e1eaf0f4379
   isLoaded: 1
   isActive: 1
