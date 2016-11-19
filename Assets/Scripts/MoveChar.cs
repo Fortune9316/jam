@@ -19,20 +19,20 @@ public class MoveChar : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-            newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            if(newPos.x<transform.position.x)
-            {
-                transform.localScale = new Vector3(-1.2f, transform.localScale.y, transform.localScale.z);
-            }else
-            {
-                transform.localScale = new Vector3(1.2f, transform.localScale.y, transform.localScale.z);
-            }
-            flag = true;
-        }
+		if (Input.GetMouseButtonDown(0))
+		{
+			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+			// No podrá moverse mientras no se haya mensajes pendientes:
+				MsgController.instancia.HuboClick(hit.collider);
+				newPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+				if (newPos.x < transform.position.x) {
+					transform.localScale = new Vector3 (-1.2f, transform.localScale.y, transform.localScale.z);
+				} else {
+					transform.localScale = new Vector3 (1.2f, transform.localScale.y, transform.localScale.z);
+				}
+				flag = true;
+			
+		}
         if (flag)
         {
             move();
