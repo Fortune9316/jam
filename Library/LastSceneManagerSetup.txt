@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Menu.unity
+=======
+- path: Assets/Scenes/Dormitorio.unity
+>>>>>>> 284c81bbaca3b74ded28c55ab0c85499ad7afeb5
   isLoaded: 1
   isActive: 1

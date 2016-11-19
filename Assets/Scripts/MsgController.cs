@@ -18,7 +18,6 @@ public class MsgController: MonoBehaviour {
 		Parrafo = 0;
 		i = 0;
 		TextoActual = "";
-		PreReq = false;
 		Req2 = false;
 	}
 
