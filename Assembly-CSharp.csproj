@@ -54,6 +54,8 @@
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
      <Compile Include="Assets\Scripts\TextHandler.cs" />
+     <Compile Include="Assets\Scripts\Viaje\CarController.cs" />
+     <Compile Include="Assets\Scripts\Viaje\ViajeA.cs" />
      <Compile Include="Assets\Scripts\menu\MenuController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
