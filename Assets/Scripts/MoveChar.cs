@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEditor.SceneManagement;
 
 public class MoveChar : MonoBehaviour {
 
@@ -10,10 +11,20 @@ public class MoveChar : MonoBehaviour {
     float t;
     float dt;
     public float speed;
+    float actualScale;
 	// Use this for initialization
 	void Start () {
         pos = transform.position;
         speed = 5f;
+        if(EditorSceneManager.GetActiveScene().name == "Cena_A")
+        {
+            actualScale = 0.5f;
+        }
+        else
+        {
+            actualScale = 1.2f;
+        }
+       
 	}
 
     // Update is called once per frame
@@ -26,9 +37,9 @@ public class MoveChar : MonoBehaviour {
 				MsgController.instancia.HuboClick(hit.collider);
 				newPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 				if (newPos.x < transform.position.x) {
-					transform.localScale = new Vector3 (-1.2f, transform.localScale.y, transform.localScale.z);
+					transform.localScale = new Vector3 (-actualScale, transform.localScale.y, transform.localScale.z);
 				} else {
-					transform.localScale = new Vector3 (1.2f, transform.localScale.y, transform.localScale.z);
+					transform.localScale = new Vector3 (actualScale, transform.localScale.y, transform.localScale.z);
 				}
 				flag = true;
 			
