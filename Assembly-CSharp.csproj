@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Oficina\OficinaController.cs" />
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
+     <Compile Include="Assets\Scripts\Reunion\ReunionController.cs" />
      <Compile Include="Assets\Scripts\TextHandler.cs" />
      <Compile Include="Assets\Scripts\Viaje\CarController.cs" />
      <Compile Include="Assets\Scripts\Viaje\ViajeA.cs" />
