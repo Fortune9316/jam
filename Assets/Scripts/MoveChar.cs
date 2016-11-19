@@ -16,7 +16,7 @@ public class MoveChar : MonoBehaviour {
 	void Start () {
         pos = transform.position;
         speed = 5f;
-        if(EditorSceneManager.GetActiveScene().name == "Cena_A")
+        if(EditorSceneManager.GetActiveScene().name == "Cena_A" || EditorSceneManager.GetActiveScene().name == "Cena_B")
         {
             actualScale = 0.5f;
         }

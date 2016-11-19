@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Viaje\ViajeA.cs" />
      <Compile Include="Assets\Scripts\cena\CenaControllerA.cs" />
      <Compile Include="Assets\Scripts\menu\MenuController.cs" />
+     <Compile Include="Assets\Scripts\tv\tvController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
