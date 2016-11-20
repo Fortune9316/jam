@@ -60,8 +60,14 @@
      <Compile Include="Assets\Scripts\TextHandler.cs" />
      <Compile Include="Assets\Scripts\Viaje\CarController.cs" />
      <Compile Include="Assets\Scripts\Viaje\ViajeA.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Viaje\ViajeB.cs" />
+=======
+     <Compile Include="Assets\Scripts\cena\CenaControllerA.cs" />
+>>>>>>> 86356672aff3c3d1a7efa9276f37368258faeaae
      <Compile Include="Assets\Scripts\menu\MenuController.cs" />
+     <Compile Include="Assets\Scripts\splash.cs" />
+     <Compile Include="Assets\Scripts\tv\tvController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

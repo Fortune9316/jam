@@ -71,7 +71,7 @@ public class MenuController : MonoBehaviour {
 
             if(t<=0f)
             {
-                SceneManager.LoadScene("Dormitorio");
+                SceneManager.LoadScene("cita1");
             }
         }
 
