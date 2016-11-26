@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 
 public class MoveChar : MonoBehaviour {
 
@@ -16,7 +15,7 @@ public class MoveChar : MonoBehaviour {
 	void Start () {
         pos = transform.position;
         speed = 5f;
-        if(EditorSceneManager.GetActiveScene().name == "Cena_A" || EditorSceneManager.GetActiveScene().name == "Cena_B")
+		if(Application.loadedLevelName == "Cena_A" || Application.loadedLevelName == "Cena_B")
         {
             actualScale = 0.5f;
         }
