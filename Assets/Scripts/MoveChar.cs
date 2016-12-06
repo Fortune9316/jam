@@ -15,7 +15,11 @@ public class MoveChar : MonoBehaviour {
 	void Start () {
         pos = transform.position;
         speed = 5f;
+<<<<<<< HEAD
         if(Application.loadedLevelName == "Cena_A" || Application.loadedLevelName == "Cena_B")
+=======
+		if(Application.loadedLevelName == "Cena_A" || Application.loadedLevelName == "Cena_B")
+>>>>>>> 8d530a9d27262b437fbd3977d2826fada944d294
         {
             actualScale = 0.5f;
         }

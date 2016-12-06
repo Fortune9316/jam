@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Menu.unity
+=======
+- path: Assets/Scenes/Oficina_B.unity
+>>>>>>> 8d530a9d27262b437fbd3977d2826fada944d294
   isLoaded: 1
   isActive: 1
