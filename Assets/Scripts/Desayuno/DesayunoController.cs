@@ -25,8 +25,9 @@ public class DesayunoController : MonoBehaviour {
         boul = PlayerPrefs.GetInt("DB", 0);
         leche = PlayerPrefs.GetInt("DL", 0);
         cereal = PlayerPrefs.GetInt("DC", 0);
-        if (boul == 0 && leche ==0 && cereal==0 && cont>=15f)
+        if (boul == 0 && leche ==0 && cereal==0 && cont>=10f)
         {
+            print("entreeee");
             for(int i=0;i<controladores.Length;i++)
             {
                 controladores[i].ToColor("Viaje_A");
