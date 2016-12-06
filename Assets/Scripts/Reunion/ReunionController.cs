@@ -35,7 +35,7 @@ public class ReunionController : MonoBehaviour {
 
                 for (int i = 0; i < controladores.Length; i++)
                 {
-                    controladores[i].ToColor("Reunion");
+                    controladores[i].ToColor("Cena_B");
                 }
             }
 

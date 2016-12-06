@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>F:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>F:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Desayuno\DesayunoController.cs" />
      <Compile Include="Assets\Scripts\MoveChar.cs" />
      <Compile Include="Assets\Scripts\MsgController.cs" />
+     <Compile Include="Assets\Scripts\Oficina\OficinaBController.cs" />
      <Compile Include="Assets\Scripts\Oficina\OficinaController.cs" />
      <Compile Include="Assets\Scripts\Opcion.cs" />
      <Compile Include="Assets\Scripts\PointObject.cs" />
@@ -60,19 +61,16 @@
      <Compile Include="Assets\Scripts\TextHandler.cs" />
      <Compile Include="Assets\Scripts\Viaje\CarController.cs" />
      <Compile Include="Assets\Scripts\Viaje\ViajeA.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Viaje\ViajeB.cs" />
-=======
      <Compile Include="Assets\Scripts\cena\CenaControllerA.cs" />
->>>>>>> 86356672aff3c3d1a7efa9276f37368258faeaae
      <Compile Include="Assets\Scripts\menu\MenuController.cs" />
      <Compile Include="Assets\Scripts\splash.cs" />
      <Compile Include="Assets\Scripts\tv\tvController.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

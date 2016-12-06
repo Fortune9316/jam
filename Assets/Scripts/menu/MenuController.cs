@@ -14,6 +14,7 @@ public class MenuController : MonoBehaviour {
     bool loop2;
     bool loop3;
     bool beatKey;
+    bool clickKey;
     float counter;
     float tArrow;
 	// Use this for initialization
@@ -29,6 +30,7 @@ public class MenuController : MonoBehaviour {
         loop = true;
         loop2 = false;
         loop3 = false;
+        clickKey = false;
     }
 	
 	// Update is called once per frame
@@ -75,13 +77,14 @@ public class MenuController : MonoBehaviour {
             }
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !clickKey)
         {
             loop = false;
             t = 0f;
             target = 1.8f;
             dt = 1;
             actualScale = animateObject.transform.localScale;
+            clickKey = true;
             
         }
 

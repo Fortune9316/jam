@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class ViajeB : MonoBehaviour {
+public class OficinaBController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,10 +11,9 @@ public class ViajeB : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(MsgController.instance.GetEndMsg())
+	    if(MsgController.instance.GetEndMsg())
         {
-            SceneManager.LoadScene("Oficina_B");
+            SceneManager.LoadScene("Almuerzo");
         }
-	
 	}
 }

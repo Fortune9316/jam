@@ -27,7 +27,7 @@ public class AlmuerzoController : MonoBehaviour {
             }
             if (hit.collider.gameObject.tag == "objectN")
             {
-                SceneManager.LoadScene("Cena_B");
+                SceneManager.LoadScene("Cena_A");
             }
         }
         if (hit != null)

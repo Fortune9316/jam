@@ -33,7 +33,7 @@ public class DesayunoController : MonoBehaviour {
             }
         }
 		if (boul != 0 && leche != 0 && cereal != 0) {
-			if (MsgController.instancia.GetEndMsg()) {
+			if (MsgController.instance.GetEndMsg()) {
 				SceneManager.LoadScene ("Viaje_B");}
 			}
         }

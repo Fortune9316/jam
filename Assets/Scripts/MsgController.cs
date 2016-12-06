@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class MsgController: MonoBehaviour {
 
-	public static MsgController instancia;
+
+    public static MsgController instance;
 	public bool PreReq, Req2;
 	public bool BOWL, CEREAL, LECHE, Continuar;
 	public string[] Textos;
@@ -21,9 +22,11 @@ public class MsgController: MonoBehaviour {
 		Req2 = false;
 	}
 
-	void Awake(){
-		instancia = this;
-	}
+    void Awake()
+    {
+        instance = this;
+    }
+	
 
 	// Update is called once per frame
 	void Update () {

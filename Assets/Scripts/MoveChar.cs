@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 
 public class MoveChar : MonoBehaviour {
 
@@ -16,7 +15,7 @@ public class MoveChar : MonoBehaviour {
 	void Start () {
         pos = transform.position;
         speed = 5f;
-        if(EditorSceneManager.GetActiveScene().name == "Cena_A" || EditorSceneManager.GetActiveScene().name == "Cena_B")
+        if(Application.loadedLevelName == "Cena_A" || Application.loadedLevelName == "Cena_B")
         {
             actualScale = 0.5f;
         }
@@ -34,7 +33,7 @@ public class MoveChar : MonoBehaviour {
 		{
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			// No podrá moverse mientras no se haya mensajes pendientes:
-				MsgController.instancia.HuboClick(hit.collider);
+				MsgController.instance.HuboClick(hit.collider);
 				newPos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 				if (newPos.x < transform.position.x) {
 					transform.localScale = new Vector3 (-actualScale, transform.localScale.y, transform.localScale.z);
